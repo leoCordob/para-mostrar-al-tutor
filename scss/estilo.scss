@@ -67,19 +67,26 @@ footer{
 }
 .dibujo{
     @include dibujo;}
+%borderr{
+    border-radius: 1px;  
+    border-top: 0.5px solid #EBEDF0; 
+}
 
 .ejemploDeComision{
     width: 600px;
     height: 400px;
-    border-radius: 1px;  
-    border-top: 0.5px solid #EBEDF0; 
-}   
+  @extend %borderr;
+} 
+$colores: (
+    fondoD:beige,
+    fondoB:red
+) ; 
 .descripcion{
     font-size: larger;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-weight: 40px;
     width: auto;
-    background-color: beige;
+    background-color: map-get($colores,fondoD);
     border-radius: 5px;
     border: black dotted 0.5px;
     padding: 5px;
@@ -186,5 +193,10 @@ body{
 }
 .cc{
     margin-top: 100px;}
+.hh{
+    margin: 50px 25px;
 
-
+}
+.H400{
+    height: 400px;
+}

@@ -35,9 +35,7 @@ a {
   transition: all 4s; }
 
 footer {
-  border-top: 1px solid #8D949E; 
-background-color: #e9ecef;
-}
+  border-top: 1px solid #EBEDF0; }
 
 .box3 {
   width: 100%;
@@ -59,10 +57,12 @@ background-color: #e9ecef;
   animation-duration: 3s; }
 
 .ejemploDeComision {
-  width: 600px;
-  height: 400px;
   border-radius: 1px;
   border-top: 0.5px solid #EBEDF0; }
+
+.ejemploDeComision {
+  width: 600px;
+  height: 400px; }
 
 .descripcion {
   font-size: larger;
@@ -100,10 +100,7 @@ background-color: #e9ecef;
 
 #commissions {
   display: grid;
-  grid-template-areas: "ittoimg ittotxt"
- "ranitaimg ranitatxt"
- "chibiimg chibitxt"
- "sketchimg sketchtxt";
+  grid-template-areas: "ittoimg ittotxt" "ranitaimg ranitatxt" "chibiimg chibitxt" "sketchimg sketchtxt";
   grid-template-columns: 600px auto;
   grid-template-rows: 400px 400px; }
 
@@ -121,9 +118,6 @@ background-color: #e9ecef;
   background-color: #1f2023; }
   .cajaDeTexto img {
     margin-top: 300%; }
-    .sans{
-      font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
-    }
 
 .subt {
   height: 50px;
@@ -168,21 +162,11 @@ body {
     text-decoration: none;
     font-size: xx-large; }
 
-p{
-  font-size: 20px;
-}
-.pad{
-  padding: 20px 5px;
-}
-.pad2{
-  margin-left: 10%;
-}
-.col{
- border-left: #EBEDF0 1px solid;
- border-right: #EBEDF0 1px solid;
- background-color: #e9ecef;
-}
-.displayFlex{
-  display: flex;
-  flex-direction: row;
-}
+.cc {
+  margin-top: 100px; }
+
+.hh {
+  margin: 50px 25px; }
+
+.H400 {
+  height: 400px; }
