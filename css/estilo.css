@@ -100,7 +100,10 @@ footer {
 
 #commissions {
   display: grid;
-  grid-template-areas: "ittoimg ittotxt" "ranitaimg ranitatxt" "chibiimg chibitxt" "sketchimg sketchtxt";
+  grid-template-areas: "ittoimg ittotxt"
+ "ranitaimg ranitatxt"
+ "chibiimg chibitxt"
+ "sketchimg sketchtxt";
   grid-template-columns: 600px auto;
   grid-template-rows: 400px 400px; }
 
@@ -144,7 +147,31 @@ body {
     height: 400px;
     animation-name: dibujo;
     animation-duration: 3s; } }
-
+@media (max-width: 1000px){
+  .barraDeNav {
+    height: 400px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr ; }
+  .carousel{
+    margin-top: 400px;
+  }
+  .ancla{
+    padding: 20%;
+    margin-top: 0%;
+  }
+}
+@media (max-width:700px){
+.carousel{
+  margin-top: 40%;
+}
+@media (max-width:550px) {
+  .nomargin{
+    margin: 30px 0px;
+  }
+  
+}
+}
 .navigator {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
