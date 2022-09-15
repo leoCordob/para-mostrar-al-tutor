@@ -211,7 +211,11 @@ body {
   margin-bottom: 150px;
 }
 }
+
+
 .globo{
+  animation-name:dibujo;
+  animation-duration: 3s;
   border: #495057 1px dotted;
   width: 90%;
   border-radius: 10px;
