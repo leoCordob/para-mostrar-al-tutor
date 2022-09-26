@@ -1,0 +1,140 @@
+@media (max-width:330px) {
+    .container{
+      padding: 0;
+      margin-left: 0%;
+    }
+    .espaciado{
+      margin: 40px 15%;
+    }
+    .card{
+      width: 11rem;
+    }
+  }
+  
+  @media(min-width:1400px){
+    .hh{
+      width: 600px;
+    }
+  }
+  @media (min-width:1200px){
+    .hh{
+      width: 400px;
+    }
+  }
+  @media (min-width:1400px){
+    .hh{
+     width: 500px;
+    }
+   }
+  
+  @media (max-width: 1000px){
+    .barraDeNav {
+     
+      width: 100%;
+      display: grid;
+      grid-template-columns: 1fr 1fr ; }
+    .carousel{
+      margin-top: 400px;
+    }
+    .ancla{
+      padding: 20%;
+      margin-top: 0%;
+    }
+    .hh{
+      width: 700px;
+    }
+  }
+  @media (max-width:700px){
+  .carousel{
+    margin-top: 40%;
+  }
+  }
+  @media (max-width:760px){
+    .hh{
+      width: 650px;
+      margin: 40px 0;
+    }
+    .container{
+      margin: 0;
+      padding: 0;
+    }
+  }
+  
+  @media (max-width:660px) {
+  
+    .hh{
+      margin: 50px 0px;
+      width: 500px;
+    }
+    .nomargin{
+      margin: 30px 0px;
+    }
+    .flex1{
+      display: flex;
+     flex-direction: column;
+    }  
+  }
+  @media (max-width:515px) {
+    .hh{
+      width: 300px;
+      margin:20px 10%;
+    }
+  }
+  
+  .margin2{
+    margin-bottom: 150px;
+  }
+  @media(max-width:370px){
+    .tamanio{
+      width: 230px;
+      height: 300px;
+    }
+    .tamanio2{
+      height: 240px;
+      width: 200px;
+    }
+    .barraDeNav {
+      height: auto;
+      width: 100%;
+      display: grid;
+      grid-template-columns: 1fr  ; 
+    }
+  
+  }
+  @media (max-width:350px){
+    .hh{
+      margin:20px 0;
+    }
+    .subt {
+      height: 50px;
+      font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+      text-decoration: none;
+      font-size: x-large;
+    font-size:large;}
+      
+  }
+  @media (max-width:310px){
+    .hh{
+      width: 160px;
+      height: 380px;
+      margin: 15px 0;
+    }
+  }
+  @media (max-width:230px) {
+    .container{
+      padding: 0;
+      margin-left: 0%;
+    }
+    .espaciado{
+      margin: 40px 0px;
+    }
+    .card{
+      width: 11rem;
+    }
+    .tamanio{
+      width: 130px;
+      height: 210px;
+    }
+    p{font-size: small;}
+  }
+  
