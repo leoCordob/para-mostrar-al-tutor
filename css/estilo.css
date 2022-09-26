@@ -100,7 +100,10 @@ footer {
 
 #commissions {
   display: grid;
-  grid-template-areas: "ittoimg ittotxt" "ranitaimg ranitatxt" "chibiimg chibitxt" "sketchimg sketchtxt";
+  grid-template-areas: "ittoimg ittotxt"
+ "ranitaimg ranitatxt"
+ "chibiimg chibitxt"
+ "sketchimg sketchtxt";
   grid-template-columns: 600px auto;
   grid-template-rows: 400px 400px; }
 
@@ -170,6 +173,7 @@ body {
 
 .H400 {
   height: 400px; }
+
 
 @media (max-width: 330px) {
   .container {
@@ -277,3 +281,9 @@ body {
     height: 210px; }
   p {
     font-size: small; } }
+@media (min-width:370px){
+  .tamanio2{
+    width: 360px;
+    height: 380px;
+  }
+}
