@@ -63,7 +63,12 @@ footer {
 .ejemploDeComision {
   width: 600px;
   height: 400px; }
-
+.zind1{
+  z-index: 1;
+}
+.zind0{
+  z-index: 0;
+}
 .descripcion {
   font-size: larger;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -173,8 +178,19 @@ body {
 
 .H400 {
   height: 400px; }
+.card{
+  width: 400px;
+ margin: 0 40px;}
+  .flex1{
+  display: flex;
+  flex-direction: row;
 
-
+  }
+  @media(max-width:456px){
+    .card{
+      width: 350px;
+    }
+  }
 @media (max-width: 330px) {
   .container {
     padding: 0;
