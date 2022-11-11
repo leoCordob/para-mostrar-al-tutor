@@ -1,26 +1,62 @@
+let carrito = [];
 
-var carrito= []
+//cargar carrito desde localstorage
+
+
+class commission {
+  constructor(tipo, precio, id) {
+      this.tipo = tipo;
+      
+      this.precio= precio;
+      this.id=id;
+  }
+}
+const commission1 = new commission("normStyle+SimpleBg",60,1)
+const commission5 = new commission("sketch",10,5)
+const commission11 = new commission("normStyle+ComplexBg",100,11)
+const commission14 = new commission("Chibi",45,14)
+
+const comisiones = [commission1,commission5,commission11,commission14]
 
 /*storage*/
+/*if(localStorage.getItem("carrito")){
+  carrito = JSON.parse(localStorage.getItem("carrito"));
+}  si uso esta parte del codigo, el carrito pasa de object a number*/
+
 const addcart1 = document.querySelector('.addcart1')
 addcart1.addEventListener('click', () => {
-  localStorage.setItem('carrito', carrito.push('normalCom+SBG'))
-})
+  
+  localStorage.setItem('carrito', carrito.push(commission1.tipo))
+  localStorage.setItem('carrito', carrito.push(commission1.precio))
+}
+)
 
 const addcart2 = document.querySelector('.addcart2')
 addcart2.addEventListener('click', () => {
-  localStorage.setItem('carrito', carrito.push('normalCom+CBG'))
+  localStorage.setItem('carrito', carrito.push(commission11.tipo))
+  localStorage.setItem('carrito', carrito.push(commission11.precio))
 })
 
 const addcart3 = document.querySelector('.addcart3')
 addcart3.addEventListener('click', () => {
-  localStorage.setItem('carrito', carrito.push('sketch'))
+  localStorage.setItem('carrito', carrito.push(commission5.tipo))
+  localStorage.setItem('carrito', carrito.push(commission5.precio))
 })
 
 const addcart4 = document.querySelector('.addcart4')
 addcart4.addEventListener('click', () => {
-  localStorage.setItem('carrito', carrito.push('ChibiSt'))
+  localStorage.setItem('carrito', carrito.push(commission14.tipo))
+  localStorage.setItem('carrito', carrito.push(commission14.precio))
   
+  
+})
+/*boton de mostrar carrito*/
+const boton = document.getElementById('button')
+boton.addEventListener('click',()=>{
+  swal.fire(
+    carrito.join(', '),
+    
+  )
 })
 
 /*JSON*/
@@ -68,37 +104,8 @@ addsketchStyle.addEventListener('click', () =>{
 timer: 1500})
 })
 
-/*condicional de verificador de carrito*/
-
-  const swalWithBootstrapButtons = Swal.mixin({
-    customClass: {
-      confirmButton: 'btn btn-success',
-      cancelButton: 'btn btn-danger'
-    },
-    buttonsStyling: false
-  })
   
 
- if(carrito.length>3) {swalWithBootstrapButtons.fire({
-    title: 'Your cart have a lot of items',
-    text: "wanna check them?",
-    icon: 'warning',
-    showCancelButton: true,
-    confirmButtonText: 'Yes, show me!',
-    cancelButtonText: 'Nope',
-    reverseButtons: true
-  }).then((result) => {
-    if (result.isConfirmed) {
-      swalWithBootstrapButtons.fire(
-        carrito.join(', '),
-        
-      )
-    } else if (
-      /* Read more about handling dismissals below */
-      result.dismiss === Swal.DismissReason.cancel
-    ) {
-      swalWithBootstrapButtons.fire(
-       'then keep going'
-      )
-    }
-  })}
+
+
+

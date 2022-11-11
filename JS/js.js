@@ -1,4 +1,4 @@
-var nombre = prompt ("¿Como te llamas?")
+/*var nombre = prompt ("¿Como te llamas?")
  if (nombre == ""){
     alert ("por favor, ingrese su nombre")
     var nombre = prompt ("ingresa tu nombre")
@@ -27,4 +27,11 @@ if ((artistas.join(",")).length<=5){
 
 if(artistas[2].length/2 != 0){
     prompt("¿quien es"+ " " +artistas[2]+ "?")
-}
+}*/
+const ancla = document.getElementsByClassName('.ancla')
+ancla.addEventListener("mouseover",()=>{
+    ancla.style.backgroundColor= "#495057"
+})
+ancla.addEventListener("mouseout", ()=>{
+    ancla.style.backgroundColor= "azure"
+})
